@@ -5,13 +5,14 @@
         if (!cond) throw new Error(msg || 'AssertionError');
     }
 
-    function makeRequest(url, callback) {
+    function makeRequest(url, method, data, callback) {
         let xhr = new XMLHttpRequest();
-        xhr.open('GET', url);
+        xhr.open(method, url);
+        xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.addEventListener('load', () => {
             callback(xhr.response);
         });
-        xhr.send();
+        xhr.send(data);
     }
 
     function randomInteger(used = []) {

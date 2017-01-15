@@ -13,10 +13,12 @@
     let PostModel = root.blog.models.Post;
     let PostListModel = root.blog.models.PostList;
     let LocalStorageAdapter = root.blog.adapters.LocalStorageAdapter;
+    let RestAdapter = root.blog.adapters.RestAdapter;
 
     class AppController {
         constructor() {
-            storageService.setAdapter(LocalStorageAdapter);
+            // storageService.setAdapter(LocalStorageAdapter);
+            storageService.setAdapter(RestAdapter);
 
             this.postListModel = new PostListModel();
 
