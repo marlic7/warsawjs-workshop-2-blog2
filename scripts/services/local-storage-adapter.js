@@ -69,7 +69,7 @@
             let newData;
 
             try {
-                const id = posts.map(v => v.id).sort().pop();
+                const id = posts.map(v => v.id).sort().pop() + 1;
                 newData = Object.assign(data, { id });
                 posts.push(newData);
             } catch(err) {
