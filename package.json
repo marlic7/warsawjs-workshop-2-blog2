@@ -1,0 +1,24 @@
+{
+  "name": "warsawjs-workshop-2-blog2",
+  "version": "1.0.0",
+  "description": "WarsawJS workshop #2 blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "moj-skrypt": "tree",
+    "start": "node_modules/.bin/simple-mock-http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlic7/warsawjs-workshop-2-blog2.git"
+  },
+  "author": "Mariusz Lichota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marlic7/warsawjs-workshop-2-blog2/issues"
+  },
+  "homepage": "https://github.com/marlic7/warsawjs-workshop-2-blog2#readme",
+  "devDependencies": {
+    "simple-mock-http-server": "^1.0.1"
+  }
+}
